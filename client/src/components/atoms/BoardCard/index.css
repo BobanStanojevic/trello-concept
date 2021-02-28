@@ -1,0 +1,36 @@
+.board-card {
+    padding: 8px;
+    width: calc(100% - 16px);
+    height: calc(100% - 16px);
+    border-radius: 3px;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    position: relative;
+}
+
+.board-card:hover {
+    cursor: pointer;
+}
+
+.board-card:hover>.hover-overlay {
+    opacity: .2;
+}
+
+.board-card>.hover-overlay {
+    opacity: 0;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.board-card>.title {
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+    z-index: 20;
+}

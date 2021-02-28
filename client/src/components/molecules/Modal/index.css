@@ -1,0 +1,282 @@
+.modal {
+    position: absolute;
+    background-color: #fff;
+    min-width: 200px;
+    min-height: 50px;
+    z-index: 99;
+    color: #17394d;
+    border-radius: 3px;
+    box-shadow:
+        0 8px 16px -4px rgba(9, 45, 66, .25),
+        0 0 0 1px rgba(9, 45, 66, .08);
+}
+
+.modal > .modal-header {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 40px;
+    width: 100%;
+    justify-content: center;
+}
+
+.modal > .modal-header > span {
+    color: #6b808c;
+    overflow: hidden;
+    white-space: nowrap;
+    line-height: 40px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.modal > .modal-header > a {
+    position: absolute;
+    right: 4px;
+    top: 4px;
+}
+
+.modal .modal-divider {
+    width: 100%;
+    display: flex;
+    height: 1px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.modal .modal-divider > .border {
+    background-color: rgba(9,45,66,.13);
+    width: calc(100% - 24px);
+    height: 100%;
+}
+.modal .modal-button {
+    width: 100%;
+    background-color: none;
+    border: none;
+    height: 32px;
+    color: #17394d;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: left;
+    padding-left: 12px;
+}
+
+.modal .modal-button:hover {
+    background-color: #298fca;
+    color: #fff;
+}
+
+.modal .modal-button > .subtitle {
+    color: #6b808c;
+    font-weight: 400;
+}
+
+.modal .modal-button:hover > .subtitle {
+    color: #fff;
+}
+
+.modal .modal-section {
+    margin: 8px 0;
+}
+
+.modal .modal-menu-section {
+    margin: 8px 12px;
+    width: calc(100% - 24px);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.modal .modal-footer {
+    margin: 8px 0;
+}
+
+.modal .modal-input {
+    width: 100%;
+    padding: 0 12px;
+    margin: 20px 0;
+}
+
+.modal .modal-input > label {
+    color: #6b808c;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    margin-bottom: 4px;
+    display: block;
+}
+
+.modal .modal-input > input {
+    background-color: #fff;
+    border: 1px solid #dfe3e6;
+    box-shadow: none;
+    box-sizing: border-box;
+    border-radius: 3px;
+    line-height: 20px;
+    font-size: 14px;
+    display: block;
+    padding: 6px 8px;
+    width: calc(100% - 24px);
+}
+
+.modal textarea {
+    width: 100%;
+    margin: 0 12px;
+    background-color: #fff;
+    border: 1px solid #dfe3e6;
+    box-shadow: none;
+    box-sizing: border-box;
+    border-radius: 3px;
+    line-height: 20px;
+    font-size: 14px;
+    display: block;
+    padding: 6px 8px;
+    width: calc(100% - 24px);
+    resize: none;
+    height: 126px;
+}
+
+.modal .modal-detailed-button {
+    background-color: #fff;
+    display: block;
+    padding: 12px 12px;
+    width: 100%;
+    min-height: 20px;
+    border: none;
+    color: #17394d;
+    text-align: left;
+}
+
+.modal .modal-detailed-button:hover {
+    background-color: #298fca;
+    color: #fff;
+    cursor: pointer;
+}
+
+.modal .modal-detailed-button > .button-title {
+    display: flex;
+    flex-direction: row;
+    font-weight: 700;
+    font-size: 14px;
+    align-items: center;
+}
+
+.modal .modal-detailed-button > .button-title > .icon {
+    margin-right: 4px;
+}
+
+.modal .modal-detailed-button:hover > .button-title > .icon {
+    background-color: #fff !important;
+}
+
+.modal .modal-detailed-button > span {
+    color: #6b808c;
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    margin-top: 4px;
+}
+
+.modal .modal-detailed-button:hover > span {
+    color: #fff;
+}
+
+.modal .modal-row {
+    display: flex;
+    flex-direction: row;
+    width: calc(100% - 24px);
+    margin: 0 12px;
+    justify-content: center;
+    align-content: center;
+}
+
+.modal .modal-column {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 24px);
+    margin: 0 12px;
+    justify-content: center;
+    align-content: center;
+}
+
+.modal .modal-image-button {
+    border-radius: 3px;
+    background-color: #fff;
+}
+
+.modal .modal-image-button:hover {
+    background-color: #edeff0;
+    cursor: pointer;
+}
+
+.modal .modal-image {
+    border-radius: 3px;
+    width: 100%;
+    max-width: 100%;
+    display: block;
+}
+
+.modal .modal-image-button > .image-button-title {
+    min-height: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    padding: 8px;
+    line-height: 20px;
+    display: block;
+    color: #17394d;
+    text-align: center;
+}
+
+.modal .modal-mini-profile {
+    display: grid;
+    grid-template-columns: 64px auto 32px;
+    width: calc(100% - 24px);
+    margin: 8px 12px;
+}
+
+.modal .modal-mini-profile > .info > .name {
+    display: block;
+    color: #17394d;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    overflow-wrap: break-word;
+    text-decoration-color: #17394d;
+    text-decoration: none;
+}
+
+.modal .modal-mini-profile > .info > .name:hover {
+    text-decoration: underline;
+}
+
+.modal .modal-mini-profile > .info > .username {
+    display: block;
+    color: #6b808c;
+    font-size: 14px;
+    line-height: 20px;
+    overflow-wrap: break-word;
+}
+
+.modal .modal-mini-profile > .info > .edit-profile {
+    display: block;
+    color: #6b808c;
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration-color: #6b808c;
+}
+
+.modal .modal-mini-profile > .info > .edit-profile:hover {
+    color: #092d42;
+    text-decoration-color: #092d42;
+}
+
+.modal .no-notifications-title {
+    text-align: center;
+    color: #6b808c;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-top: 16px;
+}

@@ -1,0 +1,78 @@
+.board {
+    background-color: rgb(0, 174, 204);
+    min-height: 100vh;
+    min-width: 100vw;
+    display: grid;
+    grid-template-rows: 40px 48px auto;
+}
+
+.board > .sub-header {
+    display: grid;
+    padding: 8px;
+    height: 32px;
+    grid-template-columns: 80% 20%;
+}
+
+.board > .sub-header .left-sub-header {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+.board > .sub-header .left-sub-header > a {
+    margin-right: 4px;
+}
+
+.board > .sub-header .left-sub-header > .title {
+    height: 100%;
+    padding: 0 2px;
+    text-align: left;
+}
+
+.board > .sub-header .left-sub-header > .title > span {
+    margin: 0;
+    padding: 0 4px 0 4px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.board > .sub-header .divider {
+    border-left: 1px solid rgba(255,255,255,.2);
+    height: 16px;
+    margin: 8px 4px 0 0;
+}
+
+.board > .sub-header .left-sub-header > .team > span {
+    letter-spacing: 1px;
+}
+
+.board > .sub-header .invite {
+    border-radius: 50%;
+}
+
+.board > .sub-header .right-sub-header {
+    justify-self: end;
+}
+
+.board > .content-wrapper {
+    overflow: hidden;
+    width: calc(100vw);
+    height: calc(100% - 8px);
+    /* margin: 0px 8px 8px 8px; */
+    margin-bottom: 8px;
+}
+.board > .content-wrapper > .content {
+    overflow-x: auto;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    max-height: 100%;
+}
+
+.board > .content-wrapper > .content > :nth-child(1) {
+  margin-left: 8px;
+}
+
+.board > .content-wrapper > .content > * {
+  margin-right: 8px;
+}

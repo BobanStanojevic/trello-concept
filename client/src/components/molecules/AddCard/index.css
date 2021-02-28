@@ -1,0 +1,62 @@
+.add-card {
+    cursor: pointer;
+    border-radius: 3px;
+    height: 40px;
+    display: grid;
+    grid-template-columns: auto;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+    font-size: 34px;
+
+}
+
+.create-card {
+    display: grid;
+    grid-template-rows: auto 40px;
+    grid-row-gap: 8px;
+}
+
+.create-card > .create-card-wrapper {
+    background-color: #fff;
+    margin: 0 8px;
+    border-radius: 3px;
+}
+
+.create-card > .create-card-wrapper > textarea {
+    overflow: hidden;
+    overflow-wrap: break-word;
+    resize: none;
+    min-height: 54px;
+    max-height: 162px;
+    background: none;
+    border: none;
+    box-shadow: none;
+    width: calc(100% - 8px);
+    height: calc(100% - 8px);
+    margin: 4px;
+    font-family: "Helvetica Neue", "Arial", Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.create-card > .create-card-wrapper > textarea:focus {
+    outline: 0;
+}
+
+
+.create-card > .controls {
+    display: flex;
+    flex-direction: row;
+    width: calc(100% - 16px);
+    margin: 0 8px;
+    align-content: center;
+}
+
+.create-card > .controls > .add {
+    margin-right: 4px;
+}
+
+.create-card > .controls > .more {
+    margin-left: auto;
+}

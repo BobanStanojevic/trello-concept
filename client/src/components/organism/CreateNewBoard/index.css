@@ -1,0 +1,109 @@
+.create-new-board {
+    z-index: 90;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    right: 0;
+    width: 404px;
+    height: 144px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 296px auto;
+    grid-template-rows: 96px auto;
+    grid-template-areas:
+        'fields bg'
+        'create .';
+}
+
+.create-new-board>.board-fields {
+    grid-area: fields;
+    padding: 10px;
+    padding-left: 16px;
+    border-radius: 3px;
+    color: #fff;
+    line-height: 20px;
+}
+
+.create-new-board>.board-fields>input {
+    padding: 2px 8px;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 0;
+    outline: 0;
+    border-radius: 3px;
+}
+
+.create-new-board>.board-fields>input:focus {
+    background-color: hsla(0, 0%, 100%, .3);
+}
+
+.create-new-board>.board-fields>input:hover {
+    background-color: hsla(0, 0%, 100%, .15);
+}
+
+.create-new-board>.board-fields>input::-webkit-input-placeholder {
+    color: hsla(0, 0%, 100%, .6);
+}
+
+.create-new-board>.board-background {
+    margin-left: 8px;
+    display: grid;
+    grid-area: bg;
+    grid-auto-flow: column;
+    grid-template-columns: 28px 28px 28px;
+    grid-template-rows: 28px 28px 28px;
+    grid-row-gap: 6px;
+    grid-column-gap: 6px;
+}
+
+.create-new-board>.board-background>.option {
+    border-radius: 3px;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.create-new-board>.board-background>.option>.icon {
+    z-index: 95;
+}
+
+.create-new-board>.board-background>.option:hover {
+    cursor: pointer;
+}
+
+.create-new-board>.board-background>.option:hover>.hover-overlay {
+    background-color: rgba(0, 0, 0, .3);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+}
+
+.create-new-board>.create-board {
+    grid-area: create;
+    align-self: center;
+}
+.create-new-board  .selected {
+    border: 2px solid #fff
+}
+.create-new-board>.create-board>a {
+    height: 20px;
+}
+
+.create-new-board-background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .75);
+    z-index: 31;
+}

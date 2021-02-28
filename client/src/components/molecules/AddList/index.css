@@ -1,0 +1,53 @@
+add-list-wrapper {
+  min-width: 280px;
+}
+
+.add-list {
+    width: 272px;
+    min-width: 272px;
+    height: 40px;
+    border-radius: 3px;
+    color: rgba(255, 255, 255, 0.8);
+    display: grid;
+    grid-template-columns: 24px auto;
+    align-items: center;
+    text-decoration: none;
+}
+
+.add-list > span {
+    line-height: 40px;
+    padding-left: 8px;
+}
+
+.adding-list {
+    cursor: pointer;
+    height: 80px;
+    width: 272px;
+    border-radius: 3px;
+    background-color: rgb(223, 227, 230);
+    display: grid;
+    grid-template-rows: 40px 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.adding-list > input {
+    height: 20px;
+    width: 246px;
+    padding: 6px 8px;
+    border-width: 1px;
+    border-radius: 3px;
+    box-shadow: none;
+    align-self: end;
+}
+
+.adding-list > .controls {
+    display: flex;
+    flex-direction: row;
+    width: calc(100% - 16px);
+    align-content: center;
+}
+
+.adding-list > .controls > .add {
+    margin-right: 4px;
+}

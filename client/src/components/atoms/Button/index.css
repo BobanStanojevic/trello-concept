@@ -1,0 +1,15 @@
+.btn {
+    border-radius: 3px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn>.name {
+    color: #fff;
+    padding: 0 8px 0 2px;
+    font-weight: 700;
+    font-size: 14px;
+}

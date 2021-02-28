@@ -1,0 +1,11 @@
+.create-board-card {
+    background: rgba(9, 45, 66, .08);
+    justify-content: center;
+    align-items: center;
+    color: #6b808c;
+}
+
+.create-board-card:hover {
+    background: rgba(9, 45, 66, .13);
+    color: #17394d;
+}

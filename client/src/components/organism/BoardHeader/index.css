@@ -1,0 +1,12 @@
+header {
+    height: 32px;
+    padding: 4px 0;
+    background-color: rgba(0, 0, 0, .15);
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 100px 100px;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+}

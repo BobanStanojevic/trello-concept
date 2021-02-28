@@ -1,0 +1,52 @@
+.list {
+  min-width: 272px;
+  width: 272px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 3px;
+  overflow: hidden;
+  height: max-content;
+}
+
+.list > .header {
+  height: 40px;
+  width: 100%;
+  margin-left: 8px;
+  display: grid;
+  grid-template-columns: auto 36px;
+  align-items: center;
+  justify-items: start;
+}
+
+.list > .header h3 {
+  padding-left: 15px;
+  margin: 0;
+  font-size: 14px;
+}
+
+.list > .header .list-name {
+  padding: 4px 0;
+  padding-left: 6px;
+  margin: 0;
+  font-size: 14px;
+  background: none;
+  border: none;
+  font-weight: bold;
+  width: 95%;
+}
+
+.list > .header .list-name:focus {
+  background: #fff;
+}
+
+.list > .cards-wrapper {
+  align-self: start;
+  width: calc(100% - 8px);
+  margin: 0 4px;
+}
+
+.list > .cards-wrapper > .cards {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
